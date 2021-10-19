@@ -25,13 +25,9 @@
                             <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Ajouter un employé</a>
+                            <a class="nav-link" href="http://localhost/git_crud/view/ajout-employe.php">Ajouter un employé</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit">Rechercher</button>
-                    </form>
                 </div>
             </div>
         </nav>
