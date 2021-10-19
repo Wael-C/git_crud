@@ -77,6 +77,13 @@ class EntityRepository
         return $r;
     }
 
+    public function deleteEntityRepo($id){
+        $data = $this->getDb()->query("DELETE FROM employes where id = '$id' ");
+        $r = $data->fetchAll(\PDO::FETCH_ASSOC);
+        return $r;
+    }
+    
+
 
 
 

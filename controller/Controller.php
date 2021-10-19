@@ -87,6 +87,12 @@ class Controller
         ]);
     }
 
+    public function delete($id){
+        try {
+            
+        }
+    }
+
 
 
 }
