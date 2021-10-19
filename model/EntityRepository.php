@@ -78,11 +78,11 @@ class EntityRepository
     }
 
     public function deleteEntityRepo($id){
-        $data = $this->getDb()->query("DELETE FROM employes where id = '$id' ");
+        $data = $this->getDb()->query("DELETE FROM employes WHERE id_employes = '$id' ");
         $r = $data->fetchAll(\PDO::FETCH_ASSOC);
         return $r;
     }
-    
+
 
 
 

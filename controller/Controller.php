@@ -87,10 +87,16 @@ class Controller
         ]);
     }
 
-    public function delete($id){
-        try {
-            
-        }
+    public function delete(){
+
+        $id = isset($_GET['id']) ? $_GET['id'] : NULL;
+
+        $this->render('layout.php', 'suppression-employe.php', [
+            'title'=> "Détail de l'employé n°$id",
+            'data' => $this->dbEntityRepository->deleteEntityRepo($id),
+            'fields' => $this->dbEntityRepository->getFields(),
+            'id'=> 'id_' . $this->dbEntityRepository->table
+        ]);
     }
 
 
